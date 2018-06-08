@@ -5,7 +5,7 @@ MAIL_TO="admin@example.com"
 ####################################
 
 HOSTNAME=`hostname`
-MAIL_FROM="raid@${HOSTNAME}.admin"
+MAIL_FROM="raid@${HOSTNAME}"
 HOSTNAME_UPCASE=`hostname|awk '{print toupper($0)}'`
 MAIL_SUBJ="${HOSTNAME_UPCASE}: RAID DEGRADED!"
 MAIL_MSG="<html><head><title>RAID MONITORING</title></head><body><p style=\"color:red; font-size: 2em\">There is a problem with RAID array ${MDARR}</p></body></html>"
